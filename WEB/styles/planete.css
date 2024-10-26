@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+
+/*Imae de fond*/
+
+.img > h1{
+    color: #fff;
+    font-size: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.description > p{
+    position: absolute;
+    color: #111;
+}
+.img > #video{
+    width: 100%;
+    max-height: 40rem;
+}
+
+.img{
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    
+    background-color: #000;
+}
+
+/*Principales description*/
+
+.description{
+    margin: auto;
+    text-align: center;
+}
+
+
+.description{
+    margin: auto;
+    text-align: center;
+    display: block;
+    background-color: #7F7B82;
+    height: 14rem;
+    margin-top: -5px;
+    padding-top: 5rem;
+    
+    font-size: 30px;
+}
+
+
+main{
+    display: block;
+}
+
+#img_actu1, #img_actu2, #img_actu3{
+    max-width: 16rem;
+    border-radius: 15px;
+    margin-top: 5rem;
+}
+
+.actu > h1{
+    margin-left: 20px;
+    position: absolute;
+}
+
+.actu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    /*background-color: #F5F4F5;*/
+}
+
+.actu1 > p, .actu3 > p, .actu2 > p  {
+    font-size: 15px;
+    width: 10rem;
+    margin-left: 3rem;
+}
+.actu1 > h3, .actu3 > h3, .actu2 > h3{
+    font-size: 30px;
+    width: 10rem;
+    margin-left: 3rem;
+}
+
+
+.actu1, .actu2, .actu3{
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.actu1:hover, .actu2:hover, .actu3:hover{
+    transform: scale(1.1);
+}
+/* Différentes activitées */
+
+span > p{
+    float: left;
+    max-width: 50%;
+    margin-left: 30px;
+    white-space: 10px;
+    font-size: 19px;
+    margin: 2rem;
+}
+
+button{
+    margin: 1rem;
+    border: transparent;
+    background-color: transparent;
+    margin-left: 5rem;
+    font-size: 30px;
+    
+}
+
+.activite > span > img{
+    max-width: 15rem;
+    margin: 2rem 0 4rem 2rem;
+    border-radius: 15px;
+}
+
+footer{ /*temporaire*/
+    margin-bottom: 200rem;
+}
+
+.activite {
+    position: relative;
+    height: 20rem; 
+    overflow: hidden;
+    background-color: #172121;
+    color: #fff;
+    line-height: 1.8;
+}
+ 
+#titre_act{
+    margin: 2rem;
+    font-size: 36px;
+    
+}
+
+.activite span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.activite > #Indication{
+    color: rgb(165, 3, 3);
+    text-align: center;
+}
+
+#previous, #next {
+    margin-top: 20px;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.change{
+    overflow: hidden;
+    background-color: #172121;
+    
+}
+/*Tableau de prix*/
+
+.prix{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+}
+caption{
+    font-size: 25px;
+}
+table{
+    border: 2px #111 solid;
+    text-align: center;
+}
+
+td{
+    width: 10rem;
+}
+tr{
+    height: 4rem;
+}
+
+tbody > tr:nth-child(even){
+    background-color: #172121;
+    color: #fff;
+}
+
+tbody > tr:nth-child(odd){
+    background-color: #F5F4F5;
+}
+
+thead > tr{
+    background-color: #111;
+    color: #fff;
+}
+
+/*Avis client - Partie*/
+
+@keyframes Scroll_Infini {
+    from {transform: translateX(0)}
+    to {transform: translateX(-50%)}
+  }
+
+
+.avis{
+    text-align: center;
+    margin-top: 2rem;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.avis_utilisateur{
+    margin-top: 3rem;
+    width: 4000px;
+    animation-name: Scroll_Infini;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.avis > .avis_utilisateur > div{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    white-space: nowrap;
+    font-size: 22px;
+}
+
+.avis1{
+    transform: translateX(15rem);
+}
+
+.avis2{
+    transform: translateX(-20rem);
+}
+
+.avis3{
+    transform: translateX(-40rem);
+}
+
+.avis4{
+    transform: translateX(25rem);
+}
+
+.avis4{
+    transform: translateX(105rem);
+}
+.avis5{
+    transform: translateX(35rem);
+}
+
+.avis img{
+    max-width: 25rem;
+    max-height: 25rem;
+    border-radius: 15px;
+    margin-bottom: -10rem;
+    margin-top: 5px;
+}
+
+.avis > h2{
+    font-size: 33px;
+}

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles/planete.css">
-        <title>Venus - Stellar Land</title> 
+        <title>Lune - Stellar Land</title> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
@@ -15,10 +15,10 @@
 
             </script>
             <div class="img">
-                <h1 id="soleil_txt">Venus</h1>
+                <h1 id="planete_txt">Lune</h1>
                 <h3>v</h3>
             <video autoplay muted id="video" >
-                <source src="images/soleil_imaes/soleil.mp4" type="video/mp4">
+                <source src="images/lunes_images/lune.mp4" type="video/mp4">
             </video>
                 
             </div>
@@ -27,17 +27,15 @@
                 <h1>Actu à l'affiche</h1>
                 <div class="actu1">
                     <img src="images/soleil_imaes/actu_soleil_1.jfif" alt="actu1" id="img_actu1">
-                    <h3>Competition du surf sur Magma • 028/10/24</h3>
-                    <p>Nous sommes heureux d'accueillir la 113e compétition de surf sur Magma, l'accès à Vénus sera donc restraint mais vous pouvez
-                        quand même acheter vos billets pour venir voir nos champions concourrir.</p>
+                    <h3>Le boeuf bourgignon fais son entrée • 25/10/24</h3>
+                    <p>A la carte retrouvée maintenant le boeuf bourguignon,  accompagné de son lit de pomme de terre et de sa sauce
+                        au poivre décrite comme de "venant parmi les Dieux" . </p>
                 </div>
 
                 <div class="actu2">
                     <img src="images/soleil_imaes/actu_soleil_2.jpg" alt="actu2" id="img_actu2">
-                    <h3>Politique planche de surf • 30/11/24</h3>
-                    <p>Dès 30 Novembre le prix du prêt des planches de surf baissera de 30%. De plus, nous mettrons une dizaines
-                        de planches de surf en plus à votre dispositions.
-                    </p>
+                    <h3>Tarte effroyable • 03/11/24</h3>
+                    <p>Pour Halloween venez découvrir notre tarte à la citrouille meringué avec sa crème légère et onctueuse, BRRR ca donne des frissons.</p>
                 </div>
 
                 <div class="actu3">
@@ -48,15 +46,12 @@
             </div>
 
             <div class="description">
-                <p>Entrez dans l'univers extrême du Surf de lave, une aventure unique sur les océans de lave brûlante de Vénus. Équipés de planches thermorésistantes et de combinaisons de protection avancées, les visiteurs intrépides glissent sur les vagues de magma rougeoyant, au cœur de paysages volcaniques surréels. Guidés par des experts en survie spatiale, surfez le 
-                    long des rivières de lave en fusion, formées par les éruptions régulières des volcans vénusiens.
+                <p>Dînez avec une vue imprenable sur la Terre, flottant comme un joyau bleu dans le ciel noir de la Lune.
+                     A la lune étoilée, chaque plat est une fusion de saveurs terrestres et de touches galactiques, 
+                    des herbes cultivées en serre lunaire aux ingrédients soigneusement importés de la planète bleue.
                 </p>
             </div>
 
-            <!-- Avec un bon livre à la main et un cocktail rafraîchissant à vos côtés, ces moments de détente deviennent un véritable bonheur. Notre équipe vous fournira des conseils sur les meilleures pratiques de bronzage, afin de vous assurer de profiter du soleil de manière sécurisée et agréable. Nous mettons également à votre disposition une sélection de crèmes solaires adaptées à votre type de peau, pour garantir une protection optimale tout en vous permettant d'obtenir ce joli teint doré tant désiré.
-        En complément, des séances de yoga et de méditation sont proposées, permettant ainsi d’harmoniser le corps et l’esprit tout en profitant des bienfaits du soleil. La musique apaisante et les rituels de relaxation compléteront cette expérience, transformant votre séjour en un véritable moment de sérénité. Que vous soyez seul, en couple ou entre amis, notre activité de bronzage vous invite à renouer avec la nature et à savourer chaque rayon de soleil qui caresse votre peau. Venez vivre cette expérience revigorante et repartez avec des souvenirs inoubliables sous un magnifique soleil d'été !-->
-
-        
         <script>
             let num = 1; // Start with the first activity
         
@@ -71,8 +66,8 @@
             }
         
             $(document).ready(function() {
-                $("#soleil_txt").hide();
-                $("#soleil_txt").fadeIn(7500);
+                $("#planete_txt").hide();
+                $("#planete_txt").fadeIn(7500);
                 //pour le nom de la planète
                 
                 $("span[id^='act']").hide();
@@ -100,35 +95,95 @@
             });
         </script>
 
-        <h2 id="titre_act">Activite principales</h2>
+        <h2 id="titre_act">Activitées principales</h2>
         <div class="activite">
             
             <span id="act1">
                 <img src="images/soleil_imaes/transat.png" alt="transat">
-                <p>Partez en exploration dans les Grottes de Magma de Vénus, des cavernes naturellement formées par le refroidissement des anciennes coulées de lave. En pénétrant dans ces tunnels de pierre rougeoyante, les visiteurs découvrent des
-                     formations géologiques uniques, éclairées par des cristaux luminescents et des résidus minéraux. 
+                <p> Venez découvrir le meilleur resaturant de la Galaxie entière, des chefs venus des quatres coins de la Terre afin de vous cuisiner les meilleurs 
+                    Plats que votre palais n'a jamais gouté. Notre Restaurant est noté 3 étoile au guide Michalin.
                      </p>
             </span>
         
             <span id="act2" style="display:none;">
                 <img src="images/soleil_imaes/spa_soleil_1.jfif" alt="spa">
-                <p>Avant de défier les vagues de magma, participez à un atelier d'initiation pour apprendre les techniques du surf de lave en toute sécurité. Les instructeurs vous guideront 
-                    dans le maniement des planches thermorésistantes et vous apprendront à lire le flux des courants magmatiques. </p>
+                <p>Après le repas, prenez place dans le lounge panoramique, doté de télescopes avancés pour contempler la Terre et explorer les étoiles. Des guides
+                     astronomiques partagent des récits fascinants sur les constellations et les mystères cosmiques. </p>
             </span>
         
             <span id="act3" style="display:none;">
                 <img src="images/soleil_imaes/yoga_soleil.jfif" alt="yoga">
-                <p> Terminez la journée avec une observation spectaculaire des éruptions volcaniques vénusiennes. Depuis un point d’observation sécurisé, admirez les geysers de 
-                    lave qui illuminent la nuit épaisse de Vénus, créant des gerbes de feu visibles à des kilomètres à la ronde.</p>
+                <p> Participez à une expérience sensorielle inédite : un dîner en apesanteur partielle ! Dans une salle spéciale, vivez la sensation de gravité lunaire
+                    , avec des bouchées qui flottent légèrement autour de vous.</p>
             </span>
             <p id="Indication">
-                ⚠L'accès de Vénus est totalement prohibé à toute personne en dessous de l'age de 16ans
+                Les alcools sont biens entendus interdit aux enfants et femmes enceintes
             </p>
         </div>
 
         <div class="change">
             <button id="previous" style="cursor:pointer;"><</button>
             <button id="next" style="cursor:pointer;">></button>    
+        </div>
+
+        
+        <div class="prix">
+            
+            <table>
+                <caption>Prix</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <td>Semaine</td>
+                        <td>Week-End</td>
+                        <td>Jour de Fête/Vacances</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Bébé (0-3ans)</th>
+                        <td>Gratuit</td>
+                        <td>Gratuit</td>
+                        <td>5€</td>
+                    </tr>
+                    <tr>
+                        <th>Enfants (3-10ans)</th>
+                        <td>10€</td>
+                        <td>20€</td>
+                        <td>26€</td>
+                    </tr>   
+                    <tr>
+                        <th>Adolescents (10-18ans)</th>
+                        <td>35€</td>
+                        <td>50€</td>
+                        <td>65€</td>
+                    </tr>
+                    <tr>
+                        <th>Adulte (18-65ans)</th>
+                        <td>85€</td>
+                        <td>115€</td>
+                        <td>130€</td>
+                    </tr>
+                    <tr>
+                        <th>Senior (65-120ans)</th>
+                        <td>75€</td>
+                        <td>95€</td>
+                        <td>100€</td>
+                    </tr>
+                    <tr>
+                        <th>Etudiant (Carte)</th>
+                        <td>15€</td>
+                        <td>16€</td>
+                        <td>20€</td>
+                    </tr>
+                    <tr>
+                        <th>Famille (Carte)</th>
+                        <td>265€</td>
+                        <td>300€</td>
+                        <td>340€</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <div class="avis">
@@ -187,11 +242,8 @@
             </div>
         </div>
 
-
-        
-
         </main>
-        
+        <!--mettre des recommandation a la trust pilot-->
 
         <footer></footer>
     </body>
