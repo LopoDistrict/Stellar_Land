@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="styles/planete.css">
         <title>Mercure - Stellar Land</title> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/transition.js"></script>
     </head>
     <body>
         <header></header>
@@ -17,8 +18,8 @@
             <div class="img">
                 <h1 id="planete_txt">Mercure</h1>
                 <h3>v</h3>
-            <video autoplay muted id="video" >
-                <source src="images/lunes_images/lune.mp4" type="video/mp4">
+            <video autoplay muted id="video" loop>
+                <source src="images/mercure_images/mercure.mp4" type="video/mp4">
             </video>
                 
             </div>
@@ -26,14 +27,14 @@
             <div class="actu">
                 <h1>Actu à l'affiche</h1>
                 <div class="actu1">
-                    <img src="images/soleil_imaes/actu_soleil_1.jfif" alt="actu1" id="img_actu1">
+                    <img src="images/mercure_images/spectacle.webp" alt="actu1" id="img_actu1">
                     <h3>Nuit filantes • 30/10/24</h3>
                     <p>Reservez vos places le 30 Octoble pour la nuits aux étoiles filantes sur Mercure, Dépechez vous car les places y sont 
                         limitées. Admirez ce spectacle unique en son genre .</p>
                 </div>
 
                 <div class="actu2">
-                    <img src="images/soleil_imaes/actu_soleil_2.jpg" alt="actu2" id="img_actu2">
+                    <img src="images/mercure_images/mine.jfif" alt="actu2" id="img_actu2">
                     <h3>Ouverture Publique attraction minière • 03/11/24</h3>
                     <p>Nous sommes fiers et heureux d'annoncer que nous ouvrons publiquement les mines et extractions de fer aux publics, 
                         vous pourrez y trouvez de nombreuses attractions nottamment de chariots sur rail à travers des galleries de fers .</p>
@@ -52,72 +53,29 @@
                 </p>
             </div>
 
-        <script>
-            let num = 1; // Start with the first activity
         
-            function nv_act(n) {
-                const span_act = document.getElementById("act" + (n + 1)); // Get the next activity
-                const span_anc = document.getElementById("act" + n); // Get the current activity
-        
-                if (span_act) { // Check if the next activity exists
-                    $(span_anc).fadeOut(1000); // Hide the current activity slowly
-                    $(span_act).fadeIn(1000); // Show the next activity slowly
-                }
-            }
-        
-            $(document).ready(function() {
-                $("#planete_txt").hide();
-                $("#planete_txt").fadeIn(7500);
-                //pour le nom de la planète
-                
-                $("span[id^='act']").hide();
-                $("#act1").show();
-        
-                $("#next").click(function(event) {
-                    event.preventDefault(); 
-                    if (num < 3) { 
-                        nv_act(num);
-                        num++; 
-                    }
-                });
-        
-                $("#previous").click(function(event) {
-                    event.preventDefault();
-                    if (num > 1) { 
-                        num--;
-                        const span_act = document.getElementById("act" + num);
-                        const span_next = document.getElementById("act" + (num + 1));
-        
-                        $(span_next).fadeOut(1000); 
-                        $(span_act).fadeIn(1000); 
-                    }
-                });
-            });
-        </script>
-
-        <h2 id="titre_act">Activitées principales</h2>
         <div class="activite">
-            
+            <h2 id="titre_act">Activitées principales</h2>    
             <span id="act1">
-                <img src="images/soleil_imaes/transat.png" alt="transat">
+                <img src="images/mercure_images/radno.jfif" alt="rando">
                 <p> Participez à une randonnée guidée à la tombée du jour, où des experts en astronomie vous mènent aux points de vue parfaits pour observer la chute des étoiles filantes. Avec des lunettes spéciales, 
                     assistez au passage des météores qui se déploient en une pluie lumineuse sous les cieux de Mercure.
                      </p>
             </span>
         
             <span id="act2" style="display:none;">
-                <img src="images/soleil_imaes/spa_soleil_1.jfif" alt="spa">
+                <img src="images/mercure_images/bijoux.jfif" alt="bijoux">
                 <p>Emportez un souvenir cosmique en participant à cet atelier créatif ! Utilisez des fragments de fer et de minerai extraits de la carrière pour forger de petits objets uniques,
                      comme des pendentifs ou des porte-bonheurs martelés à la main.</p>
             </span>
         
             <span id="act3" style="display:none;">
-                <img src="images/soleil_imaes/yoga_soleil.jfif" alt="yoga">
+                <img src="images/mercure_images/spectacle.webp" alt="yoga">
                 <p> Participez à une soirée inoubliable d'observation cosmique sur Mercure, dans un observatoire spécialement aménagé au sommet des falaises de la Carrière de Fer . Entouré par le panorama 
                     brut des montagnes de fer et des paysages lunaires, assistez à des pluies d'étoiles filantes.</p>
             </span>
             <p id="Indication">
-                l'entrée de lac carrière de fer est restreint aux 12 ans et plus
+                ⚠️  l'entrée de la carrière de fer est restreint aux 12 ans et plus.
             </p>
         </div>
 

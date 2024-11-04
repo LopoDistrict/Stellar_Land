@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="styles/planete.css">
         <title>Lune - Stellar Land</title> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/transition.js"></script>
     </head>
     <body>
         <header></header>
@@ -17,8 +18,8 @@
             <div class="img">
                 <h1 id="planete_txt">Lune</h1>
                 <h3>v</h3>
-            <video autoplay muted id="video" >
-                <source src="images/lunes_images/lune.mp4" type="video/mp4">
+            <video autoplay muted id="video" loop >
+                <source src="images/lune_images/lune_background.mp4" type="video/mp4">
             </video>
                 
             </div>
@@ -26,14 +27,14 @@
             <div class="actu">
                 <h1>Actu à l'affiche</h1>
                 <div class="actu1">
-                    <img src="images/soleil_imaes/actu_soleil_1.jfif" alt="actu1" id="img_actu1">
+                    <img src="images/lune_images/boeuf.jfif" alt="actu1" id="img_actu1">
                     <h3>Le boeuf bourgignon fais son entrée • 25/10/24</h3>
                     <p>A la carte retrouvée maintenant le boeuf bourguignon,  accompagné de son lit de pomme de terre et de sa sauce
                         au poivre décrite comme de "venant parmi les Dieux" . </p>
                 </div>
 
                 <div class="actu2">
-                    <img src="images/soleil_imaes/actu_soleil_2.jpg" alt="actu2" id="img_actu2">
+                    <img src="images/lune_images/tarte.jfif" alt="actu2" id="img_actu2">
                     <h3>Tarte effroyable • 03/11/24</h3>
                     <p>Pour Halloween venez découvrir notre tarte à la citrouille meringué avec sa crème légère et onctueuse, BRRR ca donne des frissons.</p>
                 </div>
@@ -52,67 +53,24 @@
                 </p>
             </div>
 
-        <script>
-            let num = 1; // Start with the first activity
         
-            function nv_act(n) {
-                const span_act = document.getElementById("act" + (n + 1)); // Get the next activity
-                const span_anc = document.getElementById("act" + n); // Get the current activity
-        
-                if (span_act) { // Check if the next activity exists
-                    $(span_anc).fadeOut(1000); // Hide the current activity slowly
-                    $(span_act).fadeIn(1000); // Show the next activity slowly
-                }
-            }
-        
-            $(document).ready(function() {
-                $("#planete_txt").hide();
-                $("#planete_txt").fadeIn(7500);
-                //pour le nom de la planète
-                
-                $("span[id^='act']").hide();
-                $("#act1").show();
-        
-                $("#next").click(function(event) {
-                    event.preventDefault(); 
-                    if (num < 3) { 
-                        nv_act(num);
-                        num++; 
-                    }
-                });
-        
-                $("#previous").click(function(event) {
-                    event.preventDefault();
-                    if (num > 1) { 
-                        num--;
-                        const span_act = document.getElementById("act" + num);
-                        const span_next = document.getElementById("act" + (num + 1));
-        
-                        $(span_next).fadeOut(1000); 
-                        $(span_act).fadeIn(1000); 
-                    }
-                });
-            });
-        </script>
-
-        <h2 id="titre_act">Activitées principales</h2>
         <div class="activite">
-            
+            <h2 id="titre_act">Activitées principales</h2>            
             <span id="act1">
-                <img src="images/soleil_imaes/transat.png" alt="transat">
+                <img src="images/lune_images/restaurant.webp" alt="restaurant">
                 <p> Venez découvrir le meilleur resaturant de la Galaxie entière, des chefs venus des quatres coins de la Terre afin de vous cuisiner les meilleurs 
                     Plats que votre palais n'a jamais gouté. Notre Restaurant est noté 3 étoile au guide Michalin.
                      </p>
             </span>
         
             <span id="act2" style="display:none;">
-                <img src="images/soleil_imaes/spa_soleil_1.jfif" alt="spa">
+                <img src="images/lune_images/lounge.jfif" alt="lounge">
                 <p>Après le repas, prenez place dans le lounge panoramique, doté de télescopes avancés pour contempler la Terre et explorer les étoiles. Des guides
                      astronomiques partagent des récits fascinants sur les constellations et les mystères cosmiques. </p>
             </span>
         
             <span id="act3" style="display:none;">
-                <img src="images/soleil_imaes/yoga_soleil.jfif" alt="yoga">
+                <img src="images/plat.jpg" alt="plat">
                 <p> Participez à une expérience sensorielle inédite : un dîner en apesanteur partielle ! Dans une salle spéciale, vivez la sensation de gravité lunaire
                     , avec des bouchées qui flottent légèrement autour de vous.</p>
             </span>
@@ -242,8 +200,9 @@
             </div>
         </div>
 
+
+
         </main>
-        <!--mettre des recommandation a la trust pilot-->
 
         <footer></footer>
     </body>

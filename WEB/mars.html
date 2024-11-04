@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="styles/planete.css">
         <title>Mars - Stellar Land</title> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/transition.js"></script>
     </head>
     <body>
         <header></header>
@@ -17,8 +18,8 @@
             <div class="img">
                 <h1 id="planete_txt">Mars</h1>
                 <h3>v</h3>
-            <video autoplay muted id="video" >
-                <source src="images/soleil_imaes/ars.mp4" type="video/mp4">
+            <video autoplay muted id="video" loop>
+                <source src="images/mars_images/mars.mp4" type="video/mp4">
             </video>
                 
             </div>
@@ -26,13 +27,13 @@
             <div class="actu">
                 <h1>Actu à l'affiche</h1>
                 <div class="actu1">
-                    <img src="images/soleil_imaes/actu_soleil_1.jfif" alt="actu1" id="img_actu1">
+                    <img src="images/mars_images/dodo.jfif" alt="actu1" id="img_actu1">
                     <h3>Exposition Temporaire • 10/10/24</h3>
                     <p>Ouverture exceptionnelle d'une Exposition temporaire de notre dodo dorée. </p>
                 </div>
 
                 <div class="actu2">
-                    <img src="images/soleil_imaes/actu_soleil_2.jpg" alt="actu2" id="img_actu2">
+                    <img src="images/mars_images/pheonix.jfif" alt="actu2" id="img_actu2">
                     <h3>Fermeture de notre zone phoenix • 03/11/24</h3>
                     <p>En raison d'une maladie détectée sur l'un de nos phoenix nous fermerons la zone phoenix, temporairement.</p>
                 </div>
@@ -51,67 +52,24 @@
                 </p>
             </div>
 
-        <script>
-            let num = 1; // Start with the first activity
         
-            function nv_act(n) {
-                const span_act = document.getElementById("act" + (n + 1)); // Get the next activity
-                const span_anc = document.getElementById("act" + n); // Get the current activity
-        
-                if (span_act) { // Check if the next activity exists
-                    $(span_anc).fadeOut(1000); // Hide the current activity slowly
-                    $(span_act).fadeIn(1000); // Show the next activity slowly
-                }
-            }
-        
-            $(document).ready(function() {
-                $("#planete_txt").hide();
-                $("#planete_txt").fadeIn(7500);
-                //pour le nom de la planète
-                
-                $("span[id^='act']").hide();
-                $("#act1").show();
-        
-                $("#next").click(function(event) {
-                    event.preventDefault(); 
-                    if (num < 3) { 
-                        nv_act(num);
-                        num++; 
-                    }
-                });
-        
-                $("#previous").click(function(event) {
-                    event.preventDefault();
-                    if (num > 1) { 
-                        num--;
-                        const span_act = document.getElementById("act" + num);
-                        const span_next = document.getElementById("act" + (num + 1));
-        
-                        $(span_next).fadeOut(1000); 
-                        $(span_act).fadeIn(1000); 
-                    }
-                });
-            });
-        </script>
-
-        <h2 id="titre_act">Activitées principales</h2>
         <div class="activite">
-            
+            <h2 id="titre_act">Activitées principales</h2>            
             <span id="act1">
-                <img src="images/soleil_imaes/transat.png" alt="transat">
+                <img src="images/mars_images/jardin.jfif" alt="jardin">
                 <p> Entrez dans une biosphère aux jardins étranges et enchanteurs où poussent des plantes luminescentes, habitat de créatures mythiques qui brillent de mille feux dans la nuit martienne.
                     Ce zoo est un hommage aux contes mystérieux et à la faune imaginaire de Mars.
                      </p>
             </span>
         
             <span id="act2" style="display:none;">
-                <img src="images/soleil_imaes/spa_soleil_1.jfif" alt="spa">
+                <img src="images/mars.jpg" alt="mars">
                 <p>Dans ce zoo Marsien, parcourez un univers de créatures légendaires, venues d'histoires anciennes et de mondes fantastiques. Observez les majestueux Griffons de Mars, aux plumes argentées, planer sous les aurores boréales martiennes, ou laissez-vous hypnotiser 
                     par les licornes cristallines qui illuminent les canyons poussiéreux de la planète rouge. </p>
             </span>
         
             <span id="act3" style="display:none;">
-                <img src="images/soleil_imaes/yoga_soleil.jfif" alt="yoga">
+                <img src="images/mars_images/zoo.jfif" alt="creature">
                 <p> Bienvenue dans un refuge unique où les créatures mythiques martiennes errent en liberté ! Sur des plateaux rocheux suspendus dans les nuages martiens, apercevez des Basilics des cratères et des Dragons des sables, étincelants sous le ciel violet.</p>
             </span>
             <p id="Indication">

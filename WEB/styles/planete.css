@@ -21,7 +21,9 @@
 
 .description > p{
     position: absolute;
-    color: #111;
+    color: #fff;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .img > #video{
     width: 100%;
@@ -38,21 +40,14 @@
 
 /*Principales description*/
 
-.description{
-    margin: auto;
-    text-align: center;
-}
-
 
 .description{
-    margin: auto;
-    text-align: center;
     display: block;
-    background-color: #7F7B82;
+    background-color: #161720;
     height: 14rem;
-    margin-top: -5px;
     padding-top: 5rem;
-    
+    margin: auto;
+    text-align: center;
     font-size: 30px;
 }
 
@@ -114,7 +109,8 @@ span > p{
     margin-left: 30px;
     white-space: 10px;
     font-size: 19px;
-    margin: 2rem;
+    margin: 3rem;
+    margin-top: 12rem;
 }
 
 button{
@@ -127,26 +123,31 @@ button{
 }
 
 .activite > span > img{
-    max-width: 15rem;
-    margin: 2rem 0 4rem 2rem;
+    max-width: 22rem;
+    margin: 5rem 0 4rem 2rem;
     border-radius: 15px;
 }
 
 footer{ /*temporaire*/
-    margin-bottom: 200rem;
+    height: 10rem;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
 }
+
 
 .activite {
     position: relative;
-    height: 20rem; 
+    height: 23rem; 
     overflow: hidden;
-    background-color: #172121;
+    background-color: #292738;
     color: #fff;
     line-height: 1.8;
+    padding-top: 4rem;
 }
  
 #titre_act{
-    margin: 2rem;
+    margin-left: 2rem;
     font-size: 36px;
     
 }
@@ -160,7 +161,7 @@ footer{ /*temporaire*/
 
 .activite > #Indication{
     color: rgb(165, 3, 3);
-    text-align: center;
+    margin-left: 3rem;
 }
 
 #previous, #next {
@@ -170,7 +171,7 @@ footer{ /*temporaire*/
 }
 .change{
     overflow: hidden;
-    background-color: #172121;
+    background-color: #292738;
     
 }
 /*Tableau de prix*/
