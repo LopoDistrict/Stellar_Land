@@ -1,47 +1,91 @@
 @charset "utf-8";
 
+
+*{padding: 0;margin: 0;}
+
+
+/* Barre de navigation */
 nav{
     position: sticky;
+    background-color: gray;
     top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-a{
+nav a{
     text-decoration: none;
-    color:white;
     background-color: gray;
+    color: white;
+    cursor: pointer;
     padding: 1rem;
-    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
 }
-a:hover{
+nav a:hover{
     background-color: lightgray;
+}
+
+
+.deroulant {
+    display: inline-block;
 }
 
 .planetes {
     display: none;
-    background-color: lightgray;
+    position:absolute;
     min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
-.planetes a {
-    display: block;
+@media (min-width: 2001px){
+    .planetes{
+        min-width: 400px;
+    }
+}
+@media (min-width: 1250px) and (max-width: 2000px){
+    .planetes{
+        min-width: 300px;
+    }
 }
 
+.planetes a {
+    display: block;
+    border-radius: 0;
+}
 
 .deroulant:hover .planetes{
     display: block;
 }
+
+
 
 .scroll {
     background-color: gray;
     color: white;
     cursor: pointer;
     padding: 1rem;
-    border-radius: 8px;
+    border:gray 2px solid;
+    width: 100%;
 }
 .scroll:hover {
     background-color: lightgray;
-    }
+    border: lightgray 2px solid;
+}
 
-.deroulant {
-    position: relative;
-    display: inline-block;
+
+
+
+a{
+    color:black;
+}
+a:hover{
+    font-weight: bold;
+}
+
+/*position: -webkit-sticky;*/
+
+
+img{
+    float: right;
 }
