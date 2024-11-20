@@ -1,13 +1,17 @@
+@charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("nav.css");
 
 * {
     margin: 0;
     padding: 0;
+}
+
+main{
     font-style: normal;
     font-weight: 700;
     font-family: "Roboto", sans-serif;
 }
-
 /*Imae de fond*/
 
 .img > h1{
@@ -17,6 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 3px 3px #111;
 }
 
 .description > p{
@@ -44,7 +49,7 @@
 .description{
     display: block;
     background-color: #161720;
-    height: 14rem;
+    height: 20rem;
     padding-top: 5rem;
     margin: auto;
     text-align: center;
@@ -103,17 +108,16 @@ main{
 }
 /* Différentes activitées */
 
-span > p{
+.activite > div > p{
     float: left;
     max-width: 50%;
     margin-left: 30px;
-    white-space: 10px;
     font-size: 19px;
     margin: 3rem;
     margin-top: 12rem;
 }
 
-button{
+.change button{
     margin: 1rem;
     border: transparent;
     background-color: transparent;
@@ -122,10 +126,17 @@ button{
     
 }
 
-.activite > span > img{
+.activite > div > img{
     max-width: 22rem;
     margin: 5rem 0 4rem 2rem;
     border-radius: 15px;
+}
+
+.activite > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 footer{ /*temporaire*/
@@ -138,7 +149,7 @@ footer{ /*temporaire*/
 
 .activite {
     position: relative;
-    height: 23rem; 
+    height: 25rem; 
     overflow: hidden;
     background-color: #292738;
     color: #fff;
@@ -152,12 +163,7 @@ footer{ /*temporaire*/
     
 }
 
-.activite span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
+
 
 .activite > #Indication{
     color: rgb(165, 3, 3);

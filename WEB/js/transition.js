@@ -12,7 +12,7 @@ function nv_act(n) {
 
 $(document).ready(function() {
     $("#planete_txt").hide();
-    $("#planete_txt").fadeIn(7500);
+    $("#planete_txt").fadeIn(2500);
     //pour le nom de la planète
     
     $("span[id^='act']").hide();

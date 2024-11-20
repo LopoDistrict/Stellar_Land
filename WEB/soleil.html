@@ -9,15 +9,32 @@
     </head>
     <body>
         <header></header>
-        <nav></nav>
+        <nav>
+            <a href="index.html">ACCUEIL</a>
+            <div class="deroulant">
+                <button class="scroll">PLANETES</button>
+                <div class="planetes">
+                    <a href="soleil.html">SOLEIL</a>
+                    <a href="mercure.html">MERCURE</a>
+                    <a href="venus.html">VENUS</a>
+                    <a href="lune.html">LUNE</a>
+                    <a href="mars.html">MARS</a>
+                    <a href="asteroides.html">ASTEROIDES</a>
+                    <a href="neptune.html">NEPTUNE</a>
+                    <a href="jupiter.html">JUPITER</a>
+                    <a href="pluton.html">PLUTON</a>
+                </div>
+            </div>
+            <a href="contact.html">CONTACTS</a>
+        </nav>
 
         <main>
 
             <div class="img">
                 <h1 id="planete_txt">Soleil</h1>
                 <h3>v</h3>
-            <video autoplay muted id="video" >
-                <source src="images/soleil_imaes/soleil.mp4" type="video/mp4">
+            <video autoplay muted id="video" loop >
+                <source src="images/soleil_imaes/159409-818832201_small.mp4" type="video/mp4">
             </video>
                 
             </div>
@@ -52,32 +69,30 @@
         
         <div class="activite">
             <h2 id="titre_act">Activitées principales</h2>    
-            <span id="act1">
+            <div id="act1">
                 <img src="images/soleil_imaes/transat.png" alt="transat">
-                <p> Installé sur une plateforme flottant dans l'atmosphère extérieure du soleil, tu pourrais profiter d'un bronzage ultra-rapide grâce aux puissants rayons solaires.
+                <p>Bronzage - Installé sur une plateforme flottant dans l'atmosphère extérieure du soleil, tu pourrais profiter d'un bronzage ultra-rapide grâce aux puissants rayons solaires.
                      Avec une protection solaire spéciale 10,000+, tu atteindrais le bronzage parfait en quelques secondes ! 
                      </p>
-            </span>
+            </div>
         
-            <span id="act2" style="display:none;">
+            <div id="act2" style="display:none;">
                 <img src="images/soleil_imaes/spa_soleil_1.jfif" alt="spa">
-                <p>Relaxation totale en profitant des vents solaires pour un massage énergétique. Les particules solaires donneraient une sensation de bien-être cosmique 
+                <p>Détente Solaire - Relaxation totale en profitant des vents solaires pour un massage énergétique. Les particules solaires donneraient une sensation de bien-être cosmique 
                     tout en rechargeant ton énergie grâce à des ondes de radiations ioniques contrôlées. </p>
-            </span>
+            </div>
         
-            <span id="act3" style="display:none;">
+            <div id="act3" style="display:none;">
                 <img src="images/soleil_imaes/yoga_soleil.jfif" alt="yoga">
-                <p> Pratique le yoga dans la haute atmosphère solaire, sur la couronne solaire, où la température est mystérieusement plus basse que sur la surface. 
+                <p>Yoga solaire - Pratique le yoga dans la haute atmosphère solaire, sur la couronne solaire, où la température est mystérieusement plus basse que sur la surface. 
                     Cette session de yoga intense te permettrait d'aligner tes chakras avec l'énergie du cosmos.</p>
-            </span>
-            <p id="Indication">
-                ⚠Certaines activitées requiert d'être accompagné par un Adulte
-            </p>
+            </div>
+
         </div>
 
         <div class="change">
-            <button id="previous" style="cursor:pointer;"><</button>
-            <button id="next" style="cursor:pointer;">></button>    
+            <button id="previous" style="cursor:pointer;">←</button>
+            <button id="next" style="cursor:pointer;">→</button>    
         </div>
 
         <div class="prix">
