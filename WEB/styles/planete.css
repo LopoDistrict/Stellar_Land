@@ -1,16 +1,19 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url("nav.css");
+@import url("footer.css");
+
 
 * {
     margin: 0;
     padding: 0;
 }
 
+
 main{
     font-style: normal;
     font-weight: 700;
-    font-family: "Roboto", sans-serif;
+    font-family:"Calibri", sans-serif;
+    display: block;
 }
 /*Imae de fond*/
 
@@ -48,7 +51,7 @@ main{
 
 .description{
     display: block;
-    background-color: #161720;
+    background-color: #071843;
     height: 20rem;
     padding-top: 5rem;
     margin: auto;
@@ -56,10 +59,6 @@ main{
     font-size: 30px;
 }
 
-
-main{
-    display: block;
-}
 
 #img_actu1, #img_actu2, #img_actu3{
     max-width: 16rem;
@@ -139,19 +138,12 @@ main{
     width: 100%;
 }
 
-footer{ /*temporaire*/
-    height: 10rem;
-    background-color: #111;
-    color: #fff;
-    text-align: center;
-}
-
 
 .activite {
     position: relative;
     height: 25rem; 
     overflow: hidden;
-    background-color: #292738;
+    background-color: #243e71;
     color: #fff;
     line-height: 1.8;
     padding-top: 4rem;
@@ -177,7 +169,7 @@ footer{ /*temporaire*/
 }
 .change{
     overflow: hidden;
-    background-color: #292738;
+    background-color: #243e71;
     
 }
 /*Tableau de prix*/
