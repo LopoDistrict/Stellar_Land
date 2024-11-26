@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/planete.css">
+        <title>Asteroïdes - Stellar Land</title> 
+        <script src="../js/jquery.js"></script>
+        <script src="../js/transition.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/cwad.png" />
+    </head>
+    <body>
+        <header></header>
+        <nav>
+            <a href="../index.html">ACCUEIL</a>
+            <div class="deroulant">
+                <a class="scroll">PLANETES</a>
+                <div class="planetes">
+                    <a href="soleil.html">SOLEIL</a>
+                    <a href="mercure.html">MERCURE</a>
+                    <a href="venus.html">VENUS</a>
+                    <a href="lune.html">LUNE</a>
+                    <a href="mars.html">MARS</a>
+                    <a href="asteroides.html">ASTEROIDES</a>
+                    <a href="neptune.html">NEPTUNE</a>
+                    <a href="jupiter.html">JUPITER</a>
+                    <a href="pluton.html">PLUTON</a>
+                </div>
+            </div>
+            <a href="contact.html">CONTACTS</a>
+            <div class="logo">
+                <a href="../index.html" id="logo_redirection">
+                <img src="../images/cwad.png" alt="logo" id="logo_img" ></a>
+                <h3 id="logo">Stellar Land</h3>
+            </div>            
+        </nav>
+
+        <main>
+
+            <div class="img">
+                <h1 id="soleil_txt">Asteroïdes</h1>
+            <video autoplay muted id="video" loop>
+                <source src="../images/asteroides_images/course_asteroides.mp4" type="video/mp4">
+            </video>
+                
+            </div>
+
+            <div class="actu">
+                <h1>Actu à l'affiche</h1>
+                <div class="actu1">
+                    <img src="../images/asteroides_images/file-aZNCilBEpChmXYmIfF2VEv50.webp" alt="actu1" id="img_actu1">
+                    <h3>Course National d'asteroides • 08/11/24</h3>
+                    <p>Comme chaque année venez concourir pour notre course international sur la ceinture d'astéroïdes, et tentez de gagnez de nombreux Prix.</p>
+                </div>
+
+                <div class="actu2">
+                    <img src="../images/asteroides_images/file-aZNCilBEpChmXYmIfF2VEv50.webp" alt="actu2" id="img_actu2">
+                    <h3>Réservez vos billets • 08/11/24</h3>
+                    <p>N'oubliez pas de reservez vos billets pour la course national sur la ceinture d'astéroïdes, Ils sont limités dans le temps alors ne ratez pas cette 
+                        occasion!
+                    </p>
+                </div>
+
+                <div class="actu3">
+                    <img src="../images/soleil_imaes/actu_soleil_2.jfif" alt="actu3" id="img_actu3">
+                    <h3>Meilleur Parc • 01/11/24</h3>
+                    <p>StellarLand a été encore élu meilleur parc de l'année pour la 76e année d'affilé.</p>
+                </div>
+            </div>
+
+            <div class="description">
+                <p>Venez Découvrir la ceinture d'astéroïdes et sa fameuse course qui attirent chaque année des millions de personnes. Dans cette course effrénée, les participants doivent naviguer à travers un champ d'astéroïdes tumultueux,
+                     esquivant des rochers géants et des débris spatiaux. Les pilotes utilisent leur agilité et leur instinct pour prendre des virages serrés, tout en manœuvrant avec précision
+                </p>
+            </div>
+        
+       
+
+        
+        <div class="activite">
+            <h2 id="titre_act">Activite principales</h2>
+            <div id="act1">
+                <img src="../images/asteroides_images/vr_images.webp" alt="rando">
+                <p>Conception d'asteroides - Les participants peuvent concevoir leur propre vaisseau spatial en utilisant des matériaux recyclés et des technologies de pointe. Cet atelier inclura 
+                    des conseils sur l'aérodynamisme, la vitesse et la maniabilité. À la fin, un concours permettra de récompenser le vaisseau le plus créatif et performant.
+                     </p>
+            </div>
+        
+            <div id="act2" style="display:none;">
+                <img src="../images/asteroides_images/vr_images.webp" alt="spa">
+                <p>Simulation VR - Offrez aux participants l'occasion de vivre l'excitation d'une course d'astéroïdes à travers une simulation en réalité virtuelle. Equipés de casques VR, 
+                    ils pourront s'immerger dans un environnement intergalactique, ressentant la vitesse et le frisson de l'évasion des astéroïdes tout en rivalisant avec d'autres pilotes. </p>
+            </div>
+        
+            <div id="act3" style="display:none;">
+                <img src="../images/venus_images/image_venus.webp" alt="yoga">
+                <p>Chasse au trésor - Organisez une chasse au trésor dans un espace extérieur ou une salle décorée en fonction de l'espace. Les participants devront résoudre des énigmes et surmonter 
+                    des défis pour trouver des objets cachés représentant des power-ups et des ressources nécessaires pour améliorer leurs vaisseaux lors de la course. </p>
+            </div>
+            <p id="Indication">
+                ⚠ Pour participer à la course il faut être majeur
+            </p>
+        </div>
+
+        <div class="change">
+            <button id="previous" style="cursor:pointer;">←</button>
+            <button id="next" style="cursor:pointer;">→</button>    
+        </div>
+
+        
+        <div class="prix">
+            
+            <table>
+                <caption>Prix</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <td>Semaine</td>
+                        <td>Week-End</td>
+                        <td>Jour de Fête/Vacances</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Bébé (0-3ans)</th>
+                        <td>Gratuit</td>
+                        <td>Gratuit</td>
+                        <td>5€</td>
+                    </tr>
+                    <tr>
+                        <th>Enfants (3-10ans)</th>
+                        <td>10€</td>
+                        <td>20€</td>
+                        <td>26€</td>
+                    </tr>   
+                    <tr>
+                        <th>Adolescents (10-18ans)</th>
+                        <td>35€</td>
+                        <td>50€</td>
+                        <td>65€</td>
+                    </tr>
+                    <tr>
+                        <th>Adulte (18-65ans)</th>
+                        <td>85€</td>
+                        <td>115€</td>
+                        <td>130€</td>
+                    </tr>
+                    <tr>
+                        <th>Senior (65-120ans)</th>
+                        <td>75€</td>
+                        <td>95€</td>
+                        <td>100€</td>
+                    </tr>
+                    <tr>
+                        <th>Etudiant (Carte)</th>
+                        <td>15€</td>
+                        <td>16€</td>
+                        <td>20€</td>
+                    </tr>
+                    <tr>
+                        <th>Famille (Carte)</th>
+                        <td>265€</td>
+                        <td>300€</td>
+                        <td>340€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="avis">
+            <h2>Ils nous recommandent!</h2>
+            <div class="avis_utilisateur">
+                <div class="avis1">
+                    <h2>Trust Piloter</h2>
+                    <p>StellarLand | ⭐⭐⭐⭐⭐ Notes Utilisateur</p>
+
+                </div>
+
+                <div class="avis2">
+                    <h2>BBCD</h2>
+                    <p>StellarLand - "Le meilleur parc que le monde n'est jamais crée"</p>
+                    <img src="../images/mars.jpg" alt="mars">
+                    <div style="transform: translateX(90rem);">
+                        <h2>Hotels.com</h2>
+                        <p>Hotels de StellarLand • ⭐⭐⭐⭐⭐</p>
+                        <img src="../images/hotel.jpg" alt="plat">
+                    </div>
+
+                    <div style="transform: translateX(-45rem);">
+                        <h2>ArteE</h2>
+                        <p>Voyage à StellarLand | Une création divine</p>
+                        <img src="../images/travel.jpg" alt="travel">
+                    
+                        <div style="transform: translateX(95rem);">
+                            <h2>voyage-public.fr</h2>
+                            <p>StellarLand et Cie • ⭐5 </p>
+                        </div>
+
+                        <div style="transform: translateX(68rem);">
+                            <h2>Michalin</h2>
+                            <p>Restaurant Lunaire StellarLand • ⭐⭐⭐ Michelin</p>
+                            <img src="../images/plat.jpg" alt="plat">
+                        </div>
+
+                        
+                        <div class="avis4">
+                            <h2>Trivagou.com</h2>
+                            <p>StellarLand • 5/5</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="avis3">
+                    <h2>Galactic Reviews </h2>
+                    <p>StellarLand • 🌟🌟🌟🌟🌟</p>
+                </div>
+                
+                <div style="transform: translateX(70rem);">
+                    <h2>Brute</h2>
+                    <p>StellarLand • Tout simplement incroyable</p>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+        </main>
+        
+
+        <footer>
+            <img src="../images/logo_iut.png" alt="logo_iut">
+            <h1>Membres du projet</h1>
+            <p>Autord--Romero Aurélien</p>
+            <p>Sounouvou Pierre</p>
+
+            <h1>Rapports</h1>
+            <a href="../document/rendu.txt">rendu.txt</a>
+            <a href="../document/rendu.pdf">rendu.pdf</a>
+
+        </footer>
+    </body>
+</html>

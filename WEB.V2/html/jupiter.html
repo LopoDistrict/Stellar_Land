@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/planete.css">
+        <title>Mercure - Stellar Land</title> 
+        <link rel="shortcut icon" type="image/x-icon" href="images/cwad.png" />
+        <script src="../js/jquery.js"></script>
+        <script src="../js/transition.js"></script>
+    </head>
+    <body>
+        <header></header>
+        <nav>
+            <a href="../index.html">ACCUEIL</a>
+            <div class="deroulant">
+                <a class="scroll">PLANETES</a>
+                <div class="planetes">
+                    <a href="soleil.html">SOLEIL</a>
+                    <a href="mercure.html">MERCURE</a>
+                    <a href="venus.html">VENUS</a>
+                    <a href="lune.html">LUNE</a>
+                    <a href="mars.html">MARS</a>
+                    <a href="asteroides.html">ASTEROIDES</a>
+                    <a href="neptune.html">NEPTUNE</a>
+                    <a href="jupiter.html">JUPITER</a>
+                    <a href="pluton.html">PLUTON</a>
+                </div>
+            </div>
+            <a href="contact.html">CONTACTS</a>
+            <div class="logo">
+                <a href="../index.html" id="logo_redirection">
+                <img src="../images/cwad.png" alt="logo" id="logo_img" ></a>
+                <h3 id="logo">Stellar Land</h3>
+            </div>            
+        </nav>
+
+        <main>
+            <script>
+
+            </script>
+            <div class="img">
+                <h1 id="planete_txt">Jupiter</h1>
+            <video autoplay muted id="video" loop>
+                <source src="../images/jupiter_images/160398-821086395_medium.mp4" type="video/mp4">
+            </video>
+                
+            </div>
+
+            <div class="actu">
+                <h1>Actu à l'affiche</h1>
+                <div class="actu1">
+                    <img src="../images/jupiter_images/chambre.jpg" alt="actu1" id="img_actu1">
+                    <h3>Ouverture Chambre • 30/10/24</h3>
+                    <p>Nous sommes heureux d'annoncer que nous ouvrons une chambre pour accueillir encore plus de visiteus dans notre parc.</p>
+                </div>
+
+                <div class="actu2">
+                    <img src="../images/jupiter_images/hotel.jpg" alt="actu2" id="img_actu2">
+                    <h3>Hotel Nöel • 03/11/24</h3>
+                    <p>Pour les fêtes de fin d'années venez profitez de notre tout nouvelle hôtel, spécialement aménagé pour les fêtes.</p>
+                </div>
+
+                <div class="actu3">
+                    <img src="../images/soleil_imaes/actu_soleil_2.jfif" alt="actu3" id="img_actu3">
+                    <h3>Meilleur Parc • 01/11/24</h3>
+                    <p>StellarLand a été encore élu meilleur parc de l'année pour la 76e année d'affilé.</p>
+                </div>
+            </div>
+
+            <div class="description">
+                <p>Bienvenus sur Jupiter, l'une des plus fascinantes planètes de notre système solaire Imaginez-vous flottez au-dessus des nuages de Jupiter dans un hôtel moderne défiant la gravité. 
+                    ou relaxez-vous dans l'un des nombreux manoirs ou maisons que StellarLand propose.
+                </p>
+            </div>
+
+        
+        <div class="activite">
+            <h2 id="titre_act">Activitées principales</h2>    
+            <div id="act1">
+                <img src="../images/jupiter_images/chambre.jpg" alt="rando">
+                <p> Chambre Gallilé - Nichée entre les nuages de Jupiter, la chambre "Gallilé" offre une vue imprenable sur la météo scintillante des tempêtes éternelles de la plus grande planète de notre système solaire. 
+                    Avec des murs en verre transparent pour une immersion totale dans le spectacle céleste
+                     </p>
+            </div>
+        
+            <div id="act2" style="display:none;">
+                <img src="../images/jupiter_images/hotel.jpg" alt="bijoux">
+                <p>Chambre d'or - Entrez dans l'extraordinaire avec la suite "Tempête d'Or" de l'Auberge Nuit Jovienne. Inspirée par les coloris 
+                    chauds et tourbillonnants des célèbres tempêtes de Jupiter, cette suite design vous enveloppe d'or et d'améthyste, immiscée dans une atmosphère douce et apaisante. La chambre dispose d'un grand lit.</p>
+            </div>
+        
+            <div id="act3" style="display:none;">
+                <img src="../images/hotel.jpg" alt="yoga">
+                <p>Manoir Spatial - Au fin fond des vallée Jupiterienne découvrez notre manoir luxueux spatial offrant une vue magnifique sur Saturne tout en profitant de l'immmensité des pièces. Elle possède
+                    4 salle de bain, 2 cuisines, 6 chambres, 2 salons, 1 salle de jeux, 1 mini cinéma, 1 patinoire, 1 fontaine, et 5 étages.
+                </p>
+            </div>
+            <p id="Indication">
+                ⚠️  le prix d'entrée du billet est différent de celui de l'hébergement.
+            </p>
+        </div>
+
+        <div class="change">
+            <button id="previous" style="cursor:pointer;">←</button>
+            <button id="next" style="cursor:pointer;">→</button>    
+        </div>
+
+        
+        <div class="prix">
+            
+            <table>
+                <caption>Prix</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <td>Semaine</td>
+                        <td>Week-End</td>
+                        <td>Jour de Fête/Vacances</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Bébé (0-3ans)</th>
+                        <td>Gratuit</td>
+                        <td>Gratuit</td>
+                        <td>5€</td>
+                    </tr>
+                    <tr>
+                        <th>Enfants (3-10ans)</th>
+                        <td>10€</td>
+                        <td>20€</td>
+                        <td>26€</td>
+                    </tr>   
+                    <tr>
+                        <th>Adolescents (10-18ans)</th>
+                        <td>35€</td>
+                        <td>50€</td>
+                        <td>65€</td>
+                    </tr>
+                    <tr>
+                        <th>Adulte (18-65ans)</th>
+                        <td>85€</td>
+                        <td>115€</td>
+                        <td>130€</td>
+                    </tr>
+                    <tr>
+                        <th>Senior (65-120ans)</th>
+                        <td>75€</td>
+                        <td>95€</td>
+                        <td>100€</td>
+                    </tr>
+                    <tr>
+                        <th>Etudiant (Carte)</th>
+                        <td>15€</td>
+                        <td>16€</td>
+                        <td>20€</td>
+                    </tr>
+                    <tr>
+                        <th>Famille (Carte)</th>
+                        <td>265€</td>
+                        <td>300€</td>
+                        <td>340€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="avis">
+            <h2>Ils nous recommandent!</h2>
+            <div class="avis_utilisateur">
+                <div class="avis1">
+                    <h2>Trust Piloter</h2>
+                    <p>StellarLand | ⭐⭐⭐⭐⭐ Notes Utilisateur</p>
+
+                </div>
+
+                <div class="avis2">
+                    <h2>BBCD</h2>
+                    <p>StellarLand - "Le meilleur parc que le monde n'est jamais crée"</p>
+                    <img src="../images/mars.jpg" alt="mars">
+                    <div style="transform: translateX(90rem);">
+                        <h2>Hotels.com</h2>
+                        <p>Hotels de StellarLand • ⭐⭐⭐⭐⭐</p>
+                        <img src="../images/hotel.jpg" alt="plat">
+                    </div>
+
+                    <div style="transform: translateX(-45rem);">
+                        <h2>ArteE</h2>
+                        <p>Voyage à StellarLand | Une création divine</p>
+                        <img src="../images/travel.jpg" alt="travel">
+                    
+                        <div style="transform: translateX(95rem);">
+                            <h2>voyage-public.fr</h2>
+                            <p>StellarLand et Cie • ⭐5 </p>
+                        </div>
+
+                        <div style="transform: translateX(68rem);">
+                            <h2>Michalin</h2>
+                            <p>Restaurant Lunaire StellarLand • ⭐⭐⭐ Michelin</p>
+                            <img src="../images/plat.jpg" alt="plat">
+                        </div>
+
+                        
+                        <div class="avis4">
+                            <h2>Trivagou.com</h2>
+                            <p>StellarLand • 5/5</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="avis3">
+                    <h2>Galactic Reviews </h2>
+                    <p>StellarLand • 🌟🌟🌟🌟🌟</p>
+                </div>
+                
+                <div style="transform: translateX(70rem);">
+                    <h2>Brute</h2>
+                    <p>StellarLand • Tout simplement incroyable</p>
+                </div>
+            </div>
+        </div>
+
+        </main>
+        <!--mettre des recommandation a la trust pilot-->
+
+        <footer>
+            <img src="../images/logo_iut.png" alt="logo_iut">
+            <h1>Membres du projet</h1>
+            <p>Autord--Romero Aurélien</p>
+            <p>Sounouvou Pierre</p>
+
+            <h1>Rapports</h1>
+            <a href="../document/rendu.txt">rendu.txt</a>
+            <a href="../document/rendu.pdf">rendu.pdf</a>
+
+        </footer>
+    </body>
+</html>
