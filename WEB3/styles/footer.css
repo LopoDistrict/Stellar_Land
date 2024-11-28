@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+footer{
+    background-color: #9497ba;
+}
+footer img{
+    float: right;
+    height: 5.7rem;
+}
+
+
+footer h1{
+    margin-left: 1em;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+footer p, footer a{
+    margin-left: 3rem;
+}
+
+footer{
+    margin-top: 2rem;
+    padding-bottom:2rem;
+}
+a{
+    color:black;
+}
+a:hover{
+    font-weight: bold;
+}

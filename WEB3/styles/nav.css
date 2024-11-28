@@ -1,0 +1,78 @@
+nav {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #2c566e;
+    font-family: "Calibri", sans-serif;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+}
+
+nav a, .scroll {
+    flex: 1 0 auto; 
+    text-align: center; 
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #2c566e;
+    white-space: nowrap; 
+    border: none;
+    cursor: pointer;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.deroulant {
+    position: relative; 
+}
+
+.planetes {
+    display: none;
+    position: absolute;
+    top: 150%; 
+    left: 0;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: #2c566e;
+    z-index: 1;
+}
+
+.planetes a {
+    display: block; 
+    padding: 0.5rem;
+    color: white;
+    text-align: center;
+    width: 20rem;
+    height: 2rem;
+}
+
+.deroulant:hover .planetes {
+    display: block; 
+}
+
+nav a:hover, .scroll:hover {
+    background-color: #3e6f8b;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-right: 5rem;
+}
+
+#logo_img {
+    height: 3rem;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 1300px) {
+    #logo {
+        font-size: 1rem;
+    }
+}

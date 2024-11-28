@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/contact.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../images/cwad.png" />
+        <title>Contacts - Stellar Land</title> 
+    </head>
+    <body>
+        <header></header>
+        <nav>
+            <a href="../index.html">ACCUEIL</a>
+            <div class="deroulant">
+                <a class="scroll">PLANETES</a>
+                <div class="planetes">
+                    <a href="soleil.html">SOLEIL</a>
+                    <a href="mercure.html">MERCURE</a>
+                    <a href="venus.html">VENUS</a>
+                    <a href="lune.html">LUNE</a>
+                    <a href="mars.html">MARS</a>
+                    <a href="asteroides.html">ASTEROIDES</a>
+                    <a href="neptune.html">NEPTUNE</a>
+                    <a href="jupiter.html">JUPITER</a>
+                    <a href="pluton.html">PLUTON</a>
+                </div>
+            </div>
+            <a href="contact.html">CONTACTS</a>
+            <div class="logo">
+                <a href="../index.html" id="logo_redirection">
+                <img src="../images/cwad.png" alt="logo" id="logo_img" ></a>
+                <h3 id="logo">Stellar Land</h3>
+            </div>            
+        </nav>
+
+
+
+        <main>
+            <div class="contact">
+                <div class="information">
+                    <section id="contact1">
+                        <h1>Directeur :</h1>
+                        <p>Aurélien Autord--Romero</p>
+                        <p>1 Av. des manoirs (jupiter)</p>
+                        <p>01 23 45 67 89</p>
+                        <p>aurelien.autord-romero@universite-paris-saclay.fr</p>
+                    </section>
+                    <section id="contact2">
+                        <h1>Responsable des animations :</h1>
+                        <p>Pierre Sounouvou</p>
+                        <p>15 Av. du restaurant (lune)</p>
+                        <p>01 32 54 76 89</p>
+                        <p>pierre.sounouvou@universite-paris-saclay.fr</p>
+                    </section>
+                    
+                    <h1>Reservation</h1>
+                    <form action="" method="post" enctype="multipart/form-data">
+        
+                        <label for="nom">Nom</label>
+                        <input id="nom" type="text" name="u_nom" required> <br>
+        
+                        <label for="prenom">Prénom</label>
+                        <input id="prenom" type="text" name="u_prenom" required><br>
+        
+                        <label for="mail">Adresse mail</label>
+                        <input id="mail" type="text" required pattern=".*@gmail.com" name="u_mail" placeholder="exemple@gmail.com"><br>
+        
+                        <label for="date_reservation">Date de reservation</label>
+                        <input id="date_reservation" type="date" name="date_reservation" required><br>
+        
+                        <label for="carte_etudiant">Possédez-vous la carte étudiante?</label>
+                        <input id="carte_etudiant" type="checkbox" name="carte_etudiant" ><br>
+
+                        <label for="famille">Possédez-vous le family pass?</label>
+                        <input id="famille" type="checkbox" name="famille" ><br>
+                        
+                        <label for="Adulte">Adulte</label>
+                        <input id="Adulte" type="number" name="Adulte" placeholder="nombre adulte"><br>
+                        
+                        <label for="Enfants">Enfants</label>
+                        <input id="Enfants" type="number" name="Enfants" placeholder="nombre enfants"><br>
+                        
+                        <label for="pet-select">Activité choisis:</label>
+
+                        <select id="acti_select">
+                            <option value="">--Choisissez votre activité--</option>
+                            <option value="concep_vaisseau">Conception de vaisseau</option>
+                            <option value="simu">Simulation VR</option>
+                            <option value="chasse_tresor">Chasse au trésor</option>
+                            <option value="c_gallile">Chambre Gallilé</option>
+                            <option value="c_or">Chambre d'or</option>
+                            <option value="man_spatial">Manoir Spatial</option>
+                            <option value="lounge_lune">lounge lunaire</option>
+                            <option value="apesenteur">diner en apesenteur </option>
+                            <option value="resto">Restaurant lunaire</option>
+                            <option value="jardin">Jardin magique</option>
+                            <option value="zoo">Zoo Martien</option>
+                            <option value="man_spatial">Manoir Spatial</option>
+                            <option value="refuge">Refuge Mythique</option>
+                            <option value="rando_mercure">Randonée Mercure</option>
+                            <option value="Souvenir">Souvenir</option>
+                            <option value="observation">Soirée Observation</option>
+                            <option value="glisse">Glisse Interstellaire</option>
+                            <option value="plonge">Plongée sous-marine en eau glacée</option>
+                            <option value="fort">Construction de fort givré</option>
+                            <option value="Buvette">Buvette</option>
+                            <option value="Politique">boutique</option>
+                            <option value="Bronzage">Bronzage</option>
+                            <option value="detente">Détente Solaire</option>
+                            <option value="Yoga solaire">Yoga solaire</option>
+                            <option value="rando_venus">Randonée Vénus</option>
+                            <option value="init">Initiation</option>
+                            <option value="spectacle">Spectacle Volcanique</option>
+                        </select>
+
+
+                        <input type="submit" value="Valider"><br>
+                        <input type="reset" value="Reset">
+                    </form>
+
+                </div>
+            
+
+
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10531.25027023256!2d2.17095215!3d48.70906335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1730713228738!5m2!1sfr!2sfr" width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <img src="../images/logo_iut.png" alt="logo_iut">
+            <h1>Membres du projet</h1>
+            <p>Autord--Romero Aurélien</p>
+            <p>Sounouvou Pierre</p>
+
+            <h1>Rapports</h1>
+            <a href="../document/rendu.docx">rendu.docx</a>
+            <a href="../document/rendu.pdf">rendu.pdf</a>
+
+        </footer>
+
+    </body>
+</html>
+
+<!--
+    Des informations de contact (adresse, téléphone, mail - vous pouvez tout inventer).
+    Une carte pointant sur l'entreprise, en passant par un service externe (OpenStreetMaps ♡, Google Maps, Bing Maps...) C'est à vous d'aller vous renseigner sur leur site.
+    Un formulaire de contact qui permet au visiteur de réserver une activité à une certaine date ; vous devez choisir les éléments de formulaire utiles. -->
